@@ -7,7 +7,7 @@ const httpTrigger: AzureFunction = async function (context: Context, req: HttpRe
     if (name) {
         context.res = {
             // status: 200, /* Defaults to 200 */
-            body: "Trigger both repos " + (req.query.name || req.body.name)
+            body: "Trigger both repo builds Fri 11:40 " + (req.query.name || req.body.name)
         };
     }
     else {
